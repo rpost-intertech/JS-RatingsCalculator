@@ -40,9 +40,7 @@ function collect_ratings() {
     const ratings = collect_ratings();
 
     /*select the element that has an id of average*/
-    const element = document.querySelector('#average');
-
     /*set the value property of the element to ratings.average, fixed to 2 decimal places*/
-    ratings.average = (element.value).toFixed(2);
+    document.querySelector('#average').value = ratings.average.toFixed(2);
     
  });
